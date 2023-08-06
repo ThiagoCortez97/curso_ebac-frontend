@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f2f2f;
+    padding: 16px 0;
+    color: #f5f6f5;
+}
+/*O background-color, aplica uma cor de fundo ao intem que selecionamos, nesse caso o header.*/
+/*Para selecionarmo o header apenas do incio da nossa página, temos que indicar a tag body e usar o sinal > para indicar de qual lugar vamos utilizar a tag header*/
+/*A prpriedade padding da espaçamento*/
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/*Esse display:flex faz com que tudo que selecionamos fique um ao lado do outro.*/
+/*align-items: utilizamos para ajustar o que está do lado do titúlo, para ele ficar mais cetral*/
+/*justify-contante:space-between: Serviu para nos da espaço entre o que está dentro do título*/
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6f5;
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+   /* height: 180px;*/
+   width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+/*Esse margin-bottom é para colocar uma margem inferior*/
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+/*Usamos a text-decoration para remover ou colocar a linha embaixo dos link*/
+/*Esse css nós usamos para da uma cara de botão ao nosso "ler mais", primeiro mudamos a cor de fundo, depois a cor do ler mais, ajustamos o espaçamento com "padding" e por fim colocamos a propriedade display: inline-block para o botão não ficar em cima da noticia.*/
+/*Usamos o :hover para adicionar a linha apenas quando passarmos o mouse em cima do link.*/
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 36px;
+}
+
+#sports {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+#economy {
+    background-color: rgba(255, 251, 0, 0.719);
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: rgba(0, 255, 13, 0.4)
+}
+
+#entertainment .articles article a {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+#tecnology {
+    background-color: rgba(24, 17, 17, 0.356);
+}
+
+#tecnology .articles article a {
+    background-color: rgba(66, 66, 73, 0.5);
+}
+
